@@ -21,8 +21,8 @@ We used the **React DevTools Profiler** to measure app performance.
 
 ### Screenshots
 
-![Profiler Flame Graph](rs-react-app/assets/1.png)
-![Profiler Ranked Chart](rs-react-app/assets/2.png)
+![Profiler Flame Graph](./rs-react-app/assets/1.png)
+![Profiler Ranked Chart](./rs-react-app/assets/2.png)
 
 ### Conclusion
 
