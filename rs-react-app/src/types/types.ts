@@ -1,38 +1,27 @@
-export interface FormData {
-  id: number;
-  name: string;
-  age: number;
-  email: string;
-  password: string;
-  confirmPassword: string;
-  gender: string;
-  acceptedTerms: boolean;
-  picture: string;
-  country: string;
-  createdAt: Date;
+export interface EmissionYearData {
+  year: number;
+  population: number;
+  gdp: number;
+  co2: number;
+  co2_per_capita: number;
+  co2_per_gdp: number;
 }
 
-export interface Country {
-  name: string;
-  code: string;
+export interface CountryData {
+  iso_code: string;
+  data: EmissionYearData[];
 }
 
-export interface FormErrors {
-  name?: string;
-  age?: string;
-  email?: string;
-  password?: string;
-  confirmPassword?: string;
-  gender?: string;
-  acceptedTerms?: string;
-  picture?: string;
-  country?: string;
+export type CO2Data = Record<string, CountryData>;
+
+export interface ExtraFields {
+  methane: number;
+  oil_co2: number;
+  temperature_change_from_co2: number;
 }
 
-export interface FormProps {
-  onSubmitSuccess: () => void;
-}
-
-export interface ValidationMessagesProps {
-  errors?: string | string[];
-}
+export type SortOption =
+  | 'name_asc'
+  | 'name_desc'
+  | 'population_asc'
+  | 'population_desc';
