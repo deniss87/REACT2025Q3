@@ -1,7 +1,7 @@
 export function createResource<T>(promise: Promise<T>) {
   let status: 'pending' | 'success' | 'error' = 'pending';
   let result: T;
-  let error: string;
+  let error: unknown;
 
   const suspender = promise.then(
     (res) => {

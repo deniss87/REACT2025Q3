@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { co2Resource } from '../utils/co2Resource';
+import { getCO2Resource } from '../utils/co2Resource';
 import CountryCard from './CountryCard';
 import { REGION_MAP } from '../utils/regionMap';
 import type { SortOption } from '../types/types';
@@ -19,6 +19,7 @@ export default function CountryList({
   searchQuery,
   sortOption,
 }: Props) {
+  const co2Resource = getCO2Resource();
   const data = co2Resource.read();
 
   const filteredData = useMemo(() => {
@@ -60,7 +61,7 @@ export default function CountryList({
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
       {filteredData.map(([countryName, country]) => (
         <CountryCard
-          key={country.iso_code}
+          key={`${country.iso_code || countryName}-${year}`}
           name={countryName}
           country={country}
           year={year}

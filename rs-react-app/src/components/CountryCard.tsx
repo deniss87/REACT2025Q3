@@ -44,14 +44,15 @@ function CountryCard({ name, country, year, selectedFields }: Props) {
       </p>
       <p>
         <span className="font-semibold">Population:</span>{' '}
-        {entry.population.toLocaleString()}
+        {entry.population != null ? entry.population.toLocaleString() : 'N/A'}
       </p>
       <p>
-        <span className="font-semibold">CO₂:</span> {entry.co2.toFixed(2)} Mt
+        <span className="font-semibold">CO₂:</span>{' '}
+        {entry.co2 != null ? entry.co2.toFixed(2) + ' Mt' : 'N/A'} Mt
       </p>
       <p>
         <span className="font-semibold">CO₂ per capita:</span>{' '}
-        {entry.co2_per_capita.toFixed(2)}
+        {entry.co2_per_capita != null ? entry.co2_per_capita.toFixed(2) : 'N/A'}
       </p>
 
       {selectedFields.map((field) => (
