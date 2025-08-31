@@ -25,7 +25,7 @@ We used the **React DevTools Profiler** to measure app performance.
 
 #### 2. Updated App with React.memo and useMemo
 
-- **Commit Duration:** ~3.3ms on average for most interactions
+- **Commit Duration:** ~1.9ms on average for most interactions
 - **Render Duration:**
   - `CountryList` and children: ~25ms per commit
   - UI controls (`YearSelector`, `SearchInput`): negligible (<1ms)
