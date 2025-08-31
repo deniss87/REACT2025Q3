@@ -11,9 +11,9 @@ We used the **React DevTools Profiler** to measure app performance.
 
 ### Results
 
-- **Commit Duration:** ~8–15ms on average for most interactions
+- **Commit Duration:** ~3.3ms on average for most interactions
 - **Render Duration:**
-  - `CountryList` and children: ~5–10ms per commit
+  - `CountryList` and children: ~22.1ms per commit
   - UI controls (`YearSelector`, `SearchInput`): negligible (<1ms)
 - **Interactions:** Correctly tracked in Profiler (typing, select changes, etc.)
 - **Flame Graph:** Showed re-renders mostly confined to updated components.
