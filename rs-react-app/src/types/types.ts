@@ -1,10 +1,13 @@
 export interface EmissionYearData {
-  year: number;
-  population: number;
-  gdp: number;
-  co2: number;
-  co2_per_capita: number;
-  co2_per_gdp: number;
+  year?: number;
+  population?: number;
+  gdp?: number;
+  co2?: number;
+  co2_per_capita?: number;
+  co2_per_gdp?: number;
+  methane?: number;
+  oil_co2?: number;
+  temperature_change_from_co2?: number;
 }
 
 export interface CountryData {

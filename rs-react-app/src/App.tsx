@@ -6,11 +6,13 @@ import YearSelector from './components/YearSelector';
 import Modal from './components/UI/Modal';
 import ColumnSelector from './components/ColumnSelector';
 import { REGION_MAP } from './utils/regionMap';
-import type { SortOption } from './types/types';
+import type { SortOption, EmissionYearData } from './types/types';
 import { EXTRA_FIELDS } from './types/const';
 
 function App() {
-  const [selectedFields, setSelectedFields] = useState<string[]>([]);
+  const [selectedFields, setSelectedFields] = useState<
+    (keyof EmissionYearData)[]
+  >([]);
   const [isModalOpen, setModalOpen] = useState(false);
   const [year, setYear] = useState<number>(2023);
   const [region, setRegion] = useState<string>('All');
@@ -47,7 +49,7 @@ function App() {
     []
   );
 
-  const handleColumnSave = useCallback((fields: string[]) => {
+  const handleColumnSave = useCallback((fields: (keyof EmissionYearData)[]) => {
     setSelectedFields(fields);
     setModalOpen(false);
   }, []);

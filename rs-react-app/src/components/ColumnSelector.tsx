@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import type { EmissionYearData } from '../types/types';
 
 interface ColumnSelectorProps {
-  availableFields: string[];
-  selectedFields: string[];
-  onSave: (fields: string[]) => void;
+  availableFields: (keyof EmissionYearData)[];
+  selectedFields: (keyof EmissionYearData)[];
+  onSave: (fields: (keyof EmissionYearData)[]) => void;
   onCancel: () => void;
 }
 
@@ -14,9 +15,9 @@ export default function ColumnSelector({
   onCancel,
 }: ColumnSelectorProps) {
   const [localSelection, setLocalSelection] =
-    useState<string[]>(selectedFields);
+    useState<(keyof EmissionYearData)[]>(selectedFields);
 
-  const toggleField = (field: string) => {
+  const toggleField = (field: keyof EmissionYearData) => {
     setLocalSelection((prev) =>
       prev.includes(field) ? prev.filter((f) => f !== field) : [...prev, field]
     );
