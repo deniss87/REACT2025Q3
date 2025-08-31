@@ -11,18 +11,29 @@ We used the **React DevTools Profiler** to measure app performance.
 
 ### Results
 
-- **Commit Duration:** ~3.3ms on average for most interactions
+#### 1. Initial Profiling with React Dev Tools Profiler
+
+- **Commit Duration:** ~2ms on average for most interactions
 - **Render Duration:**
-  - `CountryList` and children: ~22.1ms per commit
+  - `CountryList` and children: ~43.2ms per commit
   - UI controls (`YearSelector`, `SearchInput`): negligible (<1ms)
-- **Interactions:** Correctly tracked in Profiler (typing, select changes, etc.)
-- **Flame Graph:** Showed re-renders mostly confined to updated components.
-- **Ranked Chart:** `CountryCard` list took the most render time, but React.memo significantly reduced re-renders.
 
 ### Screenshots
 
-![Profiler Flame Graph](./rs-react-app/assets/1.png)
-![Profiler Ranked Chart](./rs-react-app/assets/2.png)
+![Profiler Flame Graph](./rs-react-app/assets/initial_1.png)
+![Profiler Ranked Chart](./rs-react-app/assets/initial_2.png)
+
+#### 2. Updated App with React.memo and useMemo
+
+- **Commit Duration:** ~3.3ms on average for most interactions
+- **Render Duration:**
+  - `CountryList` and children: ~25ms per commit
+  - UI controls (`YearSelector`, `SearchInput`): negligible (<1ms)
+
+### Screenshots
+
+![Profiler Flame Graph](./rs-react-app/assets/usingMemo_1.png)
+![Profiler Ranked Chart](./rs-react-app/assets/usingMemo_2.png)
 
 ### Conclusion
 
