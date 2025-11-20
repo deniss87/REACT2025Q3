@@ -73,3 +73,7 @@ This README summarizes the course structure, topics and the technologies covered
 
 - Final task (Teamwork)  
   [REST client](https://github.com/deepcd87/rest-client-app/pull/1)
+
+### 🔗 Links
+
+[Rolling Scope School - JS / Front-end Course ](https://rs.school/courses/reactjs)
