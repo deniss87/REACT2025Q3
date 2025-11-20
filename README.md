@@ -76,4 +76,5 @@ This README summarizes the course structure, topics and the technologies covered
 
 ### 🔗 Links
 
-[Rolling Scope School - JS / Front-end Course ](https://rs.school/courses/reactjs)
+[Course Website](https://rs.school/courses/reactjs)  
+[Course GitHub](https://github.com/rolling-scopes-school/tasks/blob/master/react/README.md)
