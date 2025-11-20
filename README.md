@@ -13,43 +13,63 @@ This README summarizes the course structure, topics and the technologies covered
 
 ---
 
-## 🔧 Tech Stack Used During the Course
+## 🔧 Course Topics
 
-### **Core**
+### Week 1
 
-- React
-- TypeScript
-- JSX
-- Vite
+- History of React
+- Vite with React and the TypeScript
+- Class Components
+- Error Boundaries
 
-### **Routing**
+  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/1)
 
+### Week 2
+
+- React Tests
+
+  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/2)
+
+### Week 3
+
+- Hooks
 - React Router
 
-### **State Management**
+  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/3)
 
-- Redux
-- Redux Toolkit
-- RTK Query
-- Zustand
+### Week 4
+
 - Context API
+- State management in React. Redux. Zustand
 
-### **Data Fetching**
+  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/4)
 
-- REST API
-- TanStack Query
+### Week 5
 
-### **Advanced Topics**
+- RTK Query. Tanstack Query
 
-- Next.js
-- SSR & SSG
-- Portals
-- Forms
-- Performance optimization
+  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/5)
 
-### **Code Quality & Tooling**
+### Week 6
 
-- ESLint
-- Prettier
-- Husky
-- React Testing Library
+- Server-side rendering/generation in React. NextJS
+
+  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/6)
+
+### Week 7
+
+- Forms in React
+- Portals in React. Creating reusable modals.
+
+  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/7)
+
+### Week 8
+
+- React Performance
+
+  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/8)
+
+### Week 9-11
+
+- Final task (Teamwork)  
+  [REST client](https://github.com/deepcd87/rest-client-app/pull/1)
