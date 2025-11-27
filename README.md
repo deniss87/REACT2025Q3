@@ -1,91 +1,193 @@
-# API Querying in React
+# 📘 Pokémon Dashboard
 
-This task is a continuation of the state management task. In this task, you will implement proper data fetching and caching mechanisms using modern querying libraries.
+## React Application
 
-## Application Requirements
+A full-featured React SPA developed in iterative stages as part of a multi-week learning program.  
+The project evolved from a basic search interface into a production-ready application with **global state management**, **TanStack Query caching**, **theming**, CSV export, pagination, and detailed Pokémon views.
 
-1. API Integration:
+---
 
-   - Based on your state management choice from the previous task, implement one of the following:
-     - For Redux users: Implement RTK Query for making API calls
-     - For Zustand users: Implement TanStack Query (formerly React Query) for data fetching
+## 🚀 Final Functionality
 
-2. Required Query Features:
+The application includes:
 
-   - Cache the results of API calls
-   - Display loading states while data is being fetched
-   - Handle error states appropriately
-   - Implement proper data invalidation and refetching strategies
-   - Add a manual cache invalidation control (e.g., a refresh button) that forces a new API call instead of using cached data
-   - All previous API calls from your application should be converted to use the chosen query solution
+🔍 Search Pokémon by name  
+📄 Grid of Pokémon cards (name, image, ID)  
+📑 Pagination with URL-sync  
+🔎 Master–detail view (detailed Pokémon page)  
+☑️ Selectable Pokémon (checkboxes)  
+📥 Download selected Pokémon as `.csv`  
+❌ Unselect all  
+🎨 Light / Dark theme toggle  
+🔄 Force refresh using TanStack Query  
+⚡ Client-side caching & refetching  
+🧭 React Router navigation  
+🧪 Unit tests coverage with Vitest + RTL
 
-3. Specific Requirements:
-   - Data loading states should be visible to users (loading indicators)
-   - Error states should be properly handled and displayed to users
-   - The cached data should persist between page navigations
+---
 
-## Technical Requirements
+## 🧩 Technologies Used
 
-1. Create a separate branch for this task from the state management task branch. Branch name: "api-queries"
+### **Frontend**
 
-2. Library Integration:
+⚛️ React 19 (function components + hooks)  
+🧭 React Router 6  
+🇹 TypeScript  
+🎨 Tailwind CSS 4  
+📦 Zustand — global store (selected Pokémon)  
+🌐 TanStack Query — caching, fetching, refetching  
+🧪 Vitest + React Testing Library + JSDOM
 
-   - For Redux users:
-     - Implement RTK Query endpoints for all your API calls
-     - Use RTK Query hooks in your components
-     - Implement proper cache invalidation strategies
-   - For Zustand users:
-     - Set up TanStack Query with appropriate configuration
-     - Create custom hooks for your queries using TanStack Query
-     - Implement proper cache management
+### **API**
 
-3. Data Management:
+🐱‍👤 Pokémon REST API
 
-   - Items returned for the current page should be properly cached
-   - Currently selected item details should be cached
-   - Loading states should be tracked and displayed appropriately
-   - Error states should be handled and displayed to users
+### **Tooling**
 
-4. Test Updates:
-   - Update your tests to cover the new querying functionality
-   - Test loading states, error states, and caching behavior
+🚦 ESLint + Prettier  
+🐶 Husky (pre-commit hooks)
 
-## Points
+---
 
-A student can achieve a maximum of 100 points.
+## 👨‍🏫 Mentor Review
 
-### Cross-check (score can be less if some parts of the functionality don't work)
+The project was evaluated by an experienced mentor throughout development.  
+Mentor feedback was provided during each stage and included code-quality, architecture, and workflow recommendations.
 
-- Query library (RTK Query or TanStack Query) is properly implemented - **25**
-- All API calls are converted to use the query library - **20**
-- Loading states are properly handled and displayed - **15**
-- Error states are properly handled and displayed - **10**
-- Cache invalidation and refetching work correctly - **20**
-- Manual cache invalidation control works as expected - **10**
+---
 
-### Penalties
+## 🛠️ Development Stages (Modules)
 
-- **1. TypeScript & Code Quality**
+<details>
+  <summary>
+    <b>1️⃣ Week 1 — Search, Pagination, Error Boundary</b>
+  </summary>
+  <br>
 
-  - TypeScript isn't used: **-95 points**
-  - Usage of _any_: **-20 points per each**
-  - Usage of _ts-ignore_: **-20 points per each**
-  - Presence of _code-smells_ (God-object, chunks of duplicate code), commented code sections: **-10 points per each**
+**✨ Initial features:**
 
-- **2. Test Coverage**
+- Project setup
+- Pokémon search functionality
+- API requests
+- Pagination
+- Error handling
+- Rendering results
 
-  - Statement coverage below 80% (≥70%): **-10 points**
-  - Statement coverage below 70% (≥50%): **-30 points**
-  - All coverage metrics below 50%: **-50 points**
+**🔗 PR:** [_link_](https://github.com/deniss87/REACT2025Q3/pull/1)
 
-- **3. React Best Practices**
+</details>
 
-  - Direct DOM manipulations inside the React components: **-50 points per each**
+<details>
+  <summary>
+    <b>2️⃣ Week 2 — Unit Testing</b>
+  </summary>
+  <br>
 
-- **4. External Dependencies**
+**✅ Coverage included:**
 
-  - Usage of component libraries, e.g. Material UI, Ant Design: **-100 points**
+- search behavior
+- list rendering
+- error states
+- localStorage interactions
+- mocked API requests
+- user interactions
 
-- **5. Project Management**
-  - Commits after the deadline: **-40 points**
-  - Pull Request doesn't follow guideline (including checkboxes in Score) [PR example](https://rs.school/docs/en/pull-request-review-process#pull-request-description-must-contain-the-following): **-10 points**
+Thresholds:
+
+- **80% statements**
+- **50% branches, functions, lines**
+
+**🔗 PR:** [_link_](https://github.com/deniss87/REACT2025Q3/pull/2)
+
+</details>
+
+<details>
+  <summary>
+    <b>3️⃣ Week 3 — Routing & Hooks</b>
+  </summary><br>
+  <br>
+
+The entire app was rewritten to functional components + hooks.
+
+💪 Added:
+
+- React Router
+- Master–detail layout
+- Pagination with query parameters
+- Detailed Pokémon page
+- Custom hooks (e.g., `useLocalStorage`)
+- About page
+- 404 Not Found page
+
+**🔗 PR:** [_link_](https://github.com/deniss87/REACT2025Q3/pull/3)
+
+</details>
+
+<details>
+  <summary>
+    <b>4️⃣ Week 4 — Zustand + Theming</b>
+  </summary>
+  <br>
+
+✔️ Zustand global store
+
+- selecting Pokémon
+- persisting selection between pages
+- unselecting items
+- “Unselect all” button
+
+✔️ Bottom flyout panel  
+Displays when items are selected and contains:
+
+- count
+- “Unselect all”
+- “Download CSV”
+
+✔️ Theme context
+
+- light/dark themes
+
+**🔗 PR:** [_link_](https://github.com/deniss87/REACT2025Q3/pull/4)
+
+</details>
+
+<details>
+  <summary>
+    <b>5️⃣ Week 5 — TanStack Query Integration</b>
+  </summary>
+  <br>
+
+**🧳 All API logic migrated to Query:**
+
+- transparent caching
+- refetching
+- loading/error states
+- per-page caching
+- detail caching
+- force refresh button
+
+**🔗 PR:** [_link_](https://github.com/deniss87/REACT2025Q3/pull/5)
+
+</details>
+
+## 🚀 Project Setup & Running
+
+#### 1. **Clone the repository**
+
+```bash
+git clone https://github.com/deniss87/REACT2025Q3.git
+cd rss-ecomm-task
+git checkout pokemon-react
+```
+
+#### 3. **Install dependencies**
+
+```bash
+npm install
+```
+
+#### 4. **Run project**
+
+```bash
+npm start
+```
