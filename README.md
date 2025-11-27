@@ -22,57 +22,65 @@ This README summarizes the course structure, topics and the technologies covered
 - Class Components
 - Error Boundaries
 
-  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/1)
+  [Practical task](https://github.com/deniss87/REACT2025Q3/tree/class-components)  
+  [Practical task (PR)](https://github.com/deniss87/REACT2025Q3/pull/1)
 
 ### Week 2
 
 - React Tests
 
-  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/2)
+  [Practical task](https://github.com/deniss87/REACT2025Q3/tree/unit-testing)  
+  [Practical task (PR)](https://github.com/deniss87/REACT2025Q3/pull/2)
 
 ### Week 3
 
 - Hooks
 - React Router
 
-  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/3)
+  [Practical task](https://github.com/deniss87/REACT2025Q3/tree/hooks-and-routing)  
+  [Practical task (PR)](https://github.com/deniss87/REACT2025Q3/pull/3)
 
 ### Week 4
 
 - Context API
 - State management in React. Redux. Zustand
 
-  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/4)
+  [Practical task](https://github.com/deniss87/REACT2025Q3/tree/app-state-management)  
+  [Practical task (PR)](https://github.com/deniss87/REACT2025Q3/pull/4)
 
 ### Week 5
 
 - RTK Query. Tanstack Query
 
-  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/5)
+  [Practical task](https://github.com/deniss87/REACT2025Q3/tree/api-queries)  
+  [Practical task (PR)](https://github.com/deniss87/REACT2025Q3/pull/5)
 
 ### Week 6
 
 - Server-side rendering/generation in React. NextJS
 
-  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/6)
+  [Practical task](https://github.com/deniss87/REACT2025Q3/tree/nextjs-ssr)  
+  [Practical task (PR)](https://github.com/deniss87/REACT2025Q3/pull/6)
 
 ### Week 7
 
 - Forms in React
 - Portals in React. Creating reusable modals.
 
-  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/7)
+  [Practical task](https://github.com/deniss87/REACT2025Q3/tree/forms)  
+  [Practical task (PR)](https://github.com/deniss87/REACT2025Q3/pull/7)
 
 ### Week 8
 
 - React Performance
 
-  [Practical task](https://github.com/deniss87/REACT2025Q3/pull/8)
+  [Practical task](https://github.com/deniss87/REACT2025Q3/tree/performance)  
+  [Practical task (PR)](https://github.com/deniss87/REACT2025Q3/pull/8)
 
 ### Week 9-11
 
 - Final task (Teamwork)  
-  [REST client](https://github.com/deepcd87/rest-client-app/pull/1)
+  [REST client (PR)](https://github.com/deepcd87/rest-client-app/pull/1)
 
 ### 🔗 Links
 
